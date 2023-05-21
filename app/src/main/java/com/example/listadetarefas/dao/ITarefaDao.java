@@ -5,11 +5,11 @@ import com.example.listadetarefas.model.Tarefa;
 import java.util.List;
 
 public interface ITarefaDao {
-    void create(Tarefa article);
+    void create(Tarefa task);
 
-    boolean update(String oldTitle, Tarefa article);
+    boolean update(String oldTitle, Tarefa task);
 
-    boolean delete(Tarefa article);
+    boolean delete(Tarefa task);
 
     Tarefa findByTitle(String title);
 

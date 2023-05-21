@@ -4,52 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
-    tools:context=".view.CreateTarefaActivity">
+    tools:context=".view.DetailsActivity">
 
     <EditText
-        android:id="@+id/descricaoTarefa"
+        android:id="@+id/detailsNome"
         android:layout_width="wrap_content"
+        android:enabled="false"
+        android:focusable="false"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text"
-        android:hint="Descrição da tarefa"
-        app:layout_constraintBottom_toTopOf="@+id/editNomeTarefa"
+        android:inputType="textPersonName"
+        android:hint="Nome da tarefa"
+        app:layout_constraintBottom_toTopOf="@+id/detailsDescricao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
-        android:id="@+id/editNomeTarefa"
+        android:id="@+id/detailsDescricao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="172dp"
+        android:enabled="false"
+        android:focusable="false"
+        android:layout_marginBottom="108dp"
         android:ems="10"
-        android:inputType="text"
-        android:hint="Nome da tarefa"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/detailsDiaDeCriacao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
-        android:id="@+id/checkPrioridade"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:text="Tarefa de prioridade"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNomeTarefa" />
-
-    <Button
-        android:id="@+id/saveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Criar tarefa"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <EditText
+        android:id="@+id/detailsDiaDeCriacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:enabled="false"
+        android:focusable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/detailsPrioridade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <CheckBox
+        android:id="@+id/detailsPrioridade"
+        android:layout_width="wrap_content"
+        android:enabled="false"
+        android:clickable="false"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="184dp"
+        android:text="CheckBox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

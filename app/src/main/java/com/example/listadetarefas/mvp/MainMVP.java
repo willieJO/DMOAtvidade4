@@ -16,8 +16,9 @@ public interface MainMVP {
     interface Presenter {
         void deatach();
         void openDetails();
-
+        void openDetails(Tarefa article);
         void populateList(RecyclerView recyclerView);
         void favoriteArticle(Tarefa article);
+        void deleteTask(Tarefa task);
     }
 }
